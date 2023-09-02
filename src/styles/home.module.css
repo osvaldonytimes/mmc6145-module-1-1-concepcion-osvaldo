@@ -1,13 +1,3 @@
-.pageTitle {
-  text-align: center;
-  margin-bottom: 30px;
-  color: #444;
-}
-
-.sectionTitle {
-  margin-top: 30px;
-}
-
 .projectsGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

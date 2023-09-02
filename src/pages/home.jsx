@@ -21,14 +21,13 @@ export default function Home() {
     },
   ];
   return (
-    <main>
-      <h1 className={styles.pageTitle}>Welcome to My Portfolio</h1>
-      <h2 className={styles.sectionTitle}>My Projects</h2>
+    <>
+      <h1>My Projects</h1>
       <div className={styles.projectsGrid}>
         {projects.map((project, index) => (
           <Project key={index} {...project} />
         ))}
       </div>
-    </main>
+    </>
   );
 }

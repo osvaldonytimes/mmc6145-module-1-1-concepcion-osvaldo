@@ -2,8 +2,8 @@ import styles from "../styles/about.module.css";
 
 export default function About() {
   return (
-    <main className={styles.container}>
-      <h1 className={styles.title}>About me</h1>
+    <>
+      <h1>About me</h1>
       <p className={styles.intro}>
         My name is Osvaldo Concepcion but you can call me Os. This website is
         about me, so I can’t guarantee you that it will be entertaining.
@@ -43,6 +43,6 @@ export default function About() {
           perhaps we can share it over a drink someday. Dale!
         </p>
       </section>
-    </main>
+    </>
   );
 }
