@@ -1,3 +1,38 @@
-.placeholder {
-  font-size: 4rem;
+.contactContainer {
+  padding: 20px;
+  text-align: center;
+}
+
+h1 {
+  color: #000;
+  font-size: 24px;
+  margin-bottom: 15px;
+}
+
+p {
+  color: #555;
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.socialList {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.socialList li {
+  margin: 0 10px;
+}
+
+.socialLink {
+  text-decoration: none;
+  font-size: 18px;
+  color: #000;
+  transition: color 0.3s;
+}
+
+.socialLink:hover {
+  color: #555;
 }
