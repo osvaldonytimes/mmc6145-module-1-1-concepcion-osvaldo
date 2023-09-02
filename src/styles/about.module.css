@@ -1,3 +1,26 @@
-.placeholder {
-  font-size: 4rem;
+.container {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 0 20px;
+  line-height: 1.7;
+}
+
+.title {
+  font-size: 2.5em;
+  font-weight: bold;
+  margin-bottom: 30px;
+}
+
+.intro {
+  font-size: 1.2em;
+  margin-bottom: 25px;
+}
+
+.bio p {
+  margin-bottom: 20px;
+  color: #666;
+}
+
+.bio p:last-child {
+  margin-bottom: 0;
 }
