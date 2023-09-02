@@ -3,6 +3,7 @@ import Home from "./pages/home";
 import About from "./pages/about.jsx";
 import Contact from "./pages/contact.jsx";
 import Header from "./components/header.jsx";
+import Footer from "./components/footer.jsx";
 
 export default function App() {
   return (
@@ -13,6 +14,7 @@ export default function App() {
         <Route path="/about" element={<About />} />
         <Route path="/contact" element={<Contact />} />
       </Routes>
+      <Footer />
     </div>
   );
 }
