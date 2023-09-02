@@ -1,7 +1,10 @@
 import styles from "../styles/home.module.css";
 import Project from "../components/project.jsx";
+import Header from "../components/header.jsx";
+import Footer from "../components/footer.jsx";
+import Layout from "../components/layout.jsx";
 
-export default function Home() {
+const Home = () => {
   const projects = [
     {
       title: "Fundarte",
@@ -22,12 +25,18 @@ export default function Home() {
   ];
   return (
     <>
-      <h1>My Projects</h1>
-      <div className={styles.projectsGrid}>
-        {projects.map((project, index) => (
-          <Project key={index} {...project} />
-        ))}
-      </div>
+      <Header />
+      <Layout>
+        <h1>My Projects</h1>
+        <div className={styles.projectsGrid}>
+          {projects.map((project, index) => (
+            <Project key={index} {...project} />
+          ))}
+        </div>
+      </Layout>
+      <Footer />
     </>
   );
-}
+};
+
+export default Home;
