@@ -2,16 +2,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px solid #eaeaea;
+  border: 1px solid #e0e0e0;
   border-radius: 10px;
   margin: 20px;
   padding: 20px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: transform 0.2s ease-in;
+  transition: transform 0.2s ease-in, box-shadow 0.2s ease-in-out;
 }
 
 .projectContainer:hover {
-  transform: scale(1.05);
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08); /* subtle shadow effect on hover */
 }
 
 .projectImage {
@@ -24,26 +24,20 @@
 
 .projectTitle {
   font-size: 1.5em;
-  font-weight: bold;
+  font-weight: 500; /* not too bold, aligning with Apple's style */
   margin-bottom: 10px;
-  color: #333;
 }
 
 .projectDescription {
-  color: #777;
+  color: #666666; /* slightly lighter text for description */
   margin-bottom: 10px;
 }
 
 .projectLink {
-  display: inline-block;
-  padding: 8px 12px;
-  background-color: #007BFF;
-  color: #fff;
-  border-radius: 5px;
-  text-decoration: none;
-  transition: background-color 0.3s ease;
+  color: #000000; /* black link color */
+  transition: border-bottom 0.2s ease-in-out;
 }
 
 .projectLink:hover {
-  background-color: #0056b3;
+  border-bottom: 1px solid #000000; /* underline effect on hover */
 }
